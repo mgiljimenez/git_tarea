@@ -12,8 +12,7 @@ def json_to_df(data):
         latitude = i.get('lat', None)
         longitude = i.get('lon', None)
         name = i.get('tags', {}).get('name', "NO NAME")
-        street = i.get('tags', {}).get('addr:street', "NO
-        STREET")
+        street = i.get('tags', {}).get('addr:street', "NO STREET")
         number = i.get('tags', {}).get('addr:housenumber', 9999)
         places['category'].append(tipo)
         places['lat'].append(latitude)
